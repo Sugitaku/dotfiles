@@ -1,0 +1,5 @@
+escape ^ZZ
+startup_message off
+autodetach on
+shell -$SHELL
+termcapinfo xterm-color kD=\E[3~
