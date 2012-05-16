@@ -4,12 +4,6 @@
 #
 export LANG=ja_JP.UTF-8
 
-## Default shell configuration
-#
-# set prompt
-#
-PROMPT="[%n@mac %~]$ "
-
 # auto change directory
 #
 setopt auto_cd
@@ -57,3 +51,7 @@ setopt share_history    # share command history data
 #
 autoload -U compinit
 compinit
+
+## load user .zshrc configuration file
+#
+[ -f ~/.zshrc.mine ] && source ~/.zshrc.mine
