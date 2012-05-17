@@ -1,5 +1,0 @@
-## Default shell configuration
-#
-# set prompt
-#
-PROMPT="[%n@mac %~]$ "
