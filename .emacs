@@ -50,3 +50,10 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+;; flymake-mode
+;;(require 'flymake)
+
+;; csharp-mode
+;;(autoload 'csharp-mode "csharp-mode")
+;;(setq auto-mode-alist (cons '("\\.cs$" . csharp-mode) auto-mode-alist))
