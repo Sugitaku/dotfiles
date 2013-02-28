@@ -1,112 +1,152 @@
-((("php-completion-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ac-sources" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("make-variable-buffer-local" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("auto-complete" .
+((("ffap-bindings" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("kbd" .
-   [1 0 0])
-  ("php-mode-map" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("define-key" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("php-indent-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("php-mode-hook" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-set-offset" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-basic-offset" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("my-js-indent-line" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("indent-line-function" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("make-local-variable" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("set" .
-   [1 0 0])
-  ("forward-char" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("offset" .
-   [2 0 0 0 0 0])
-  ("when" .
-   [3 0 0 0])
-  ("indentation" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("indent-line-to" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("looking-at" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("if" .
-   [2 0])
-  ("back-to-indentation" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("parse-status" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("current-indentation" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("point-at-bol" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("syntax-ppss" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("save-excursion" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("let*" .
-   [1 0 0 0])
-  ("interactive" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("css-mode-hooks" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("css-mode-hook" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-hook" .
-   [5 0 0 0 0 0 0 0])
-  ("indent-tabs-mode" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("defun" .
-   [5 0 0 0 0])
-  ("whattf-dt" .
-   [1 0 0 0 0 0 0 0 0])
-  ("eval-after-load" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("cua-mode" .
+  ("file_put_contents" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("php" .
+   [2 0 0])
+  ("php-mode" .
    [1 0 0 0 0 0 0 0])
-  ("wgrep" .
-   [1 0 0 0 0])
-  ("public" .
-   [1 0 0 0 0 0])
-  ("print" .
-   [0 0 0 0 1])
-  ("setq" .
-   [12 0 0 0])
-  ("setq-default" .
-   [1 0 0 0 1 0 0 0 0 0 0 0])
-  ("require" .
-   [5 0 0 0 0 0 0])
-  ("moccur-edit" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("nil" .
-   [9 0 0])
-  ("cua-enable-cua-keys" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("auto-mode-alist" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("nxml-mode" .
-   [1 0 0 0 0 0 0 0 0])
-  ("js-indent-hook" .
+  ("php-manual-url" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("php-search-url" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("php-manual-url" .
+  ("js-indent-hook" .
    [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("php-mode" .
+  ("nxml-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("auto-mode-alist" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("cua-enable-cua-keys" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nil" .
+   [17 0 0])
+  ("moccur-edit" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [10 0 0 0 0 0 0])
+  ("setq-default" .
+   [1 0 0 0 1 0 0 0 0 0 0 0])
+  ("setq" .
+   [16 0 0 0])
+  ("print" .
+   [0 0 0 0 1])
+  ("public" .
+   [1 0 0 0 0 0])
+  ("wgrep" .
+   [1 0 0 0 0])
+  ("cua-mode" .
    [1 0 0 0 0 0 0 0])
-  ("php" .
+  ("eval-after-load" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("whattf-dt" .
+   [1 0 0 0 0 0 0 0 0])
+  ("defun" .
+   [6 0 0 0 0])
+  ("indent-tabs-mode" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [5 0 0 0 0 0 0 0])
+  ("css-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("css-mode-hooks" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("interactive" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("let*" .
+   [1 0 0 0])
+  ("save-excursion" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("syntax-ppss" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("point-at-bol" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("current-indentation" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("parse-status" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("back-to-indentation" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("if" .
+   [3 0])
+  ("looking-at" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("indent-line-to" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("indentation" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("when" .
+   [5 0 0 0])
+  ("offset" .
+   [2 0 0 0 0 0])
+  ("forward-char" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("set" .
    [1 0 0])
-  ("file_put_contents" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("make-local-variable" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("indent-line-function" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("my-js-indent-line" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-basic-offset" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-set-offset" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("php-mode-hook" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("php-indent-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("define-key" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("php-mode-map" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [3 0 0])
+  ("auto-complete" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("make-variable-buffer-local" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ac-sources" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("php-completion-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ctags" .
+   [1 0 0 0 0])
+  ("global-set-key" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("$apple" .
+   [1 0 0 0 0 0])
+  ("$appleI" .
+   [1 0 0 0 0 0 0])
+  ("and" .
+   [1 0 0])
+  ("anything-exuberant-ctags" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("anything-gtags" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("list" .
+   [1 0 0 0])
+  ("anything-c-source-imenu" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("anything-c-source-exuberant-ctags-select" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("anything-for-tags" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("anything" .
+   [3 0 0 0 0 0 0 0])
+  ("anything-for-tags." .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("thing-at-point" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("symbol" .
+   [1 0 0 0 0 0])
+  ("tags" .
+   [1 0 0 0])
+  ("global-map" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("egg" .
+   [1 0 0])
+  ("executable-find" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))

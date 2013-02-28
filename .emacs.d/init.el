@@ -287,11 +287,37 @@
 	  (auto-complete-mode t))))
 (add-hook 'php-mode-hook 'php-completion-hook)
 
+;; gtags-mode のキーバインド有効化
+(setq gtags-suggested-key-mapping t)
+(require 'gtags nil t)
 
+;; hg clone ssh://hg@bitbucket.org/semente/ctags.el
+(require 'ctags nil t)
+(setq tags-revert-without-query t)
+(setq ctags-command "ctags -R  --fields=\"+afikKlmnsSzt\" ")
+(global-set-key (kbd "<f5>") 'ctags-create-or-update-tags-table)
 
+;; (auto-install-from-emacswiki "anything-gtags.el")
+;; (auto-install-from-emacswiki "anything-exuberant-ctags.el")
+(when (and (require 'anything-exuberant-ctags nil t)
+	   (require 'anything-gtags nil t))
+  (setq anything-for-tags
+	(list anything-c-source-imenu
+	      anything-c-source-gtags-select
+	      anything-c-source-exuberant-ctags-select
+	      ))
+  (defun anything-for-tags ()
+    "Preconfigured `anuthing' for anything-for-tags."
+    (interactive)
+    (anything anything-for-tags
+	      (thing-at-point 'symbol)
+	      nil nil nil "*anything for tags*"))
+  (define-key global-map (kbd "M-t") 'anything-for-tags))
 
+;; (auto-install "http://raw.github.com/byplayer/egg/master/egg.el")
+;; (auto-install "http://raw.github.com/byplayer/egg/master/egg-grep.el")
+(when (executable-find "git")
+  (require 'egg nil t))
 
-
-
-
-
+;; カーソル位置のファイルを開く
+(ffap-bindings)
