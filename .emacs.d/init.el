@@ -56,6 +56,9 @@
 ;; ファイルサイズの表示
 (setq size-indication-mode t)
 
+;; カーソル前の文字を1文字消す
+(global-set-key "\C-h" 'delete-backward-char)
+
 ;; リージョン内の行数と文字数をモードラインに表示
 (defun count-lines-and-chars ()
   (if mark-active
@@ -321,3 +324,23 @@
 
 ;; カーソル位置のファイルを開く
 (ffap-bindings)
+
+;; ELPA の設定
+(when (require 'package nil t)
+  (add-to-list 'package-archives
+	       '("melpa" . "http://melpa.milkbox.net/packages/"))
+  (add-to-list 'package-archives
+	       '("ELPA" . "http://tromey.com/elpa/"))
+  (package-initialize))
+
+;; (package-install "web-mode")
+(when (require 'web-mode)
+  (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+)
