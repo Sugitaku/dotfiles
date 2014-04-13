@@ -18,9 +18,11 @@ install git
 install gnu-sed
 install gnu-time
 install htop-osx
+install httpd
 install jpeg
 install jq
 install libmcrypt
+install mysql
 install openssl
 install --HEAD phpenv || true
 install --HEAD php-build || true
